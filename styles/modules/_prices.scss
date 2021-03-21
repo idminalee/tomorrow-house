@@ -1,0 +1,77 @@
+%price-base {
+  @include inline-flexbox(start);
+
+  .currency {
+    font-family: $font-main;
+  }
+
+  .amount {
+    font-family: $font-price;
+  }
+}
+
+.price-16,
+.price-20,
+.price-32 {
+  @extend %price-base;
+  color: $primary-dark;
+
+  .currency {
+    font-weight: 700;
+  }
+
+  .amount {
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+}
+
+.price-16 {
+  .currency {
+    @include text-style(14);
+  }
+
+  .amount {
+    font-size: 16px;
+  }
+}
+
+.price-20 {
+  .currency {
+    @include text-style(16);
+  }
+
+  .amount {
+    font-size: 20px;
+  }
+}
+
+.price-32 {
+  .currency {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+  }
+
+  .amount {
+    font-size: 32px;
+  }
+}
+
+.price-off {
+  @extend %price-base;
+  color: $secondary;
+
+  .currency {
+    @include text-style(14);
+    font-weight: 400;
+  }
+
+  .amount {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    text-decoration: line-through;
+  }
+}
