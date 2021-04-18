@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -150,5 +150,67 @@
         </div>
       </div>
     </header>
+
+    <aside class="sidebar sm-only">
+      <header class="sidebar-header">
+        <h1 class="logo">
+          <a href="/">
+            <img src="./assets/images/logo.svg" alt="Tomorrow House" />
+          </a>
+        </h1>
+
+        <!-- NOTE: When signed in -->
+        <div class="sidebar-user">
+          <a href="/">
+            <div class="avatar-24">
+              <img src="./assets/images/img-user-01.jpg" alt="사달라" />
+            </div>
+            <strong class="username">사달라</strong>
+          </a>
+        </div>
+
+        <!-- NOTE: When signed out -->
+        <div class="sidebar-auth">
+          <a class="btn-fill-primary btn-40" href="/">로그인</a>
+          <a class="btn-outlined btn-40" href="/">회원가입</a>
+        </div>
+      </header>
+
+      <nav class="sidebar-nav">
+        <h2 class="visually-hidden">Menu</h2>
+
+        <div class="drawer-menu">
+          <button class="drawer-menu-button" type="button">
+            <i class="icon-store" aria-hidden></i>
+            스토어
+            <i class="icon-chevron" aria-hidden></i>
+          </button>
+
+          <div drawer-menu-content>
+            <ul drawer-menu-list>
+              <li class="drawer-menu-item"><a href="/">스토어홈</a></li>
+              <li class="drawer-menu-item"><a href="/">카테고리</a></li>
+              <li class="drawer-menu-item"><a href="/">신혼가구</a></li>
+              <li class="drawer-menu-item">
+                <a href="/">기획전</a>
+                <i class="icon-new"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- NOTE: When signed in -->
+
+        <div class="sidebar-user-menu">
+          <ul class="user-menu-list">
+            <li class="user-menu-item"><a href="/">마이페이지</a></li>
+            <li class="user-menu-item"><a href="/">나의 쇼핑</a></li>
+            <li class="user-menu-item"><a href="/">스크랩북</a></li>
+            <li class="user-menu-item"><a href="/">알림</a></li>
+            <li class="user-menu-item"><a href="/">이벤트</a></li>
+          </ul>
+        </div>
+      </nav>
+    </aside>
   </body>
 </html>
