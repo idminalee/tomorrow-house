@@ -46,6 +46,7 @@ i {
   content: '\e90b';
 }
 .icon-new::before {
+  color: $red;
   content: '\e90c';
 }
 .icon-search::before {
