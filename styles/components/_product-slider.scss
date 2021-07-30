@@ -90,4 +90,38 @@
       }
     }
   }
+
+  @include responsive(D) {
+    @include flexbox(flex-end, flex-start);
+    flex-direction: row-reverse;
+
+    &-content {
+      width: 500px;
+      height: 500px;
+    }
+
+    &-thumbnail {
+      margin-right: 8px;
+    }
+
+    .thumbnail-list {
+      flex-direction: column;
+    }
+
+    .thumbnail-item {
+      margin-right: 0;
+      margin-bottom: 8px;
+
+      button,
+      img {
+        width: 75px;
+        height: 75px;
+        transition: transform 300ms ease-in-out;
+      }
+
+      img:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
 }
