@@ -1,0 +1,33 @@
+.order-form {
+  margin-bottom: 40px;
+  .order-inputs {
+    margin-bottom: 20px;
+
+    .select-group:not(:last-child) {
+      margin-bottom: 8px;
+    }
+  }
+
+  .order-price {
+    @include flexbox(space-between);
+    margin-bottom: 20px;
+
+    dt {
+      @include text-style(13, $primary-dark);
+      font-weight: 700;
+    }
+  }
+
+  .button-group {
+    @include flexbox;
+
+    button {
+      width: 50%;
+      margin-right: 8px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
