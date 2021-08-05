@@ -8,6 +8,14 @@
     }
   }
 
+  .order-checkout {
+    margin-bottom: 20px;
+
+    .checkout-item:not(:last-child) {
+      margin-bottom: 8px;
+    }
+  }
+
   .order-price {
     @include flexbox(space-between);
     margin-bottom: 20px;
